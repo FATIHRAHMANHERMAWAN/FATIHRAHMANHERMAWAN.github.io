@@ -1,10 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; /* Anasayfa fontuyla eşleşir */
+    font-size: 16px; /* Tutarlı font boyutu */
+    line-height: 1.5; /* Tutarlı satır boşluğu */
 }
+
+
 
 /* Genel Header Stili İçin Tutarlılık */
 header {
@@ -13,14 +18,17 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge, derinlik katmak için */
 }
 
+
 header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Menü öğelerini ortalar */
-    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 header nav ul li {
     margin: 0 15px; /* Menü öğeleri arasındaki boşluk */
@@ -140,14 +148,7 @@ header nav ul li a.button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hover sırasında gölge efekti */
 }
 
-/* Sayfa Genelinde Tutarlılık İçin Genel Stil */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* Anasayfa fontuyla eşleşir */
-    font-size: 16px; /* Tutarlı font boyutu */
-    line-height: 1.5; /* Tutarlı satır boşluğu */
-}
+
 
 .contact-page, .blog-page, .project-page {
     background-color: #f4f4f4; /* Anasayfa arka plan rengiyle eşleşir */
@@ -230,14 +231,6 @@ body {
     text-decoration: underline;
 }
 
-/* html ve body öğelerinin tam yükseklikte olmasını sağlar */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Görünüm alanının tam yüksekliği */
-    display: flex;
-    flex-direction: column;
-}
 
 /* Ana içerik alanını genişletir ve footer'ı aşağı iter */
 main {
@@ -256,6 +249,7 @@ main {
     bottom: 0; /* Footer'ın altta kalmasını sağlar */
     width: 100%; /* Görünüm genişliğini kaplar */
 }
+
 
 .site-footer p {
     margin: 0;
